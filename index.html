@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>校园通知雷达</title>
+<meta name="theme-color" content="#B23A2E">
+<link rel="icon" href="/notice-radar-site/favicon.ico">
+<link rel="apple-touch-icon" href="/notice-radar-site/apple-touch-icon.png">
+<style>
+:root{--bg:#FBFAF7;--card:#fff;--ink:#1A1A1A;--ink2:#3F3F3F;--muted:#6E6A63;--line:#E7E2D8;--red:#B23A2E}
+@media (prefers-color-scheme:dark){:root{--bg:#151311;--card:#1D1A17;--ink:#EDE9E2;--ink2:#C9C4BA;--muted:#9A948A;--line:#2C2822;--red:#D9614F}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--bg);color:var(--ink);
+font:16px/1.6 system-ui,-apple-system,"Segoe UI","Noto Sans SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:520px}
+.card{background:var(--card);border:.5px solid var(--line);border-radius:12px;padding:32px 28px}
+.icon{width:60px;height:60px;border-radius:14px;display:block;margin-bottom:22px}
+h1{margin:0 0 6px;font-size:24px;font-weight:650;letter-spacing:-.01em}
+.sub{margin:0 0 26px;color:var(--muted);font-size:14px}
+a.go{display:flex;align-items:center;justify-content:space-between;gap:12px;text-decoration:none;
+background:var(--red);color:#fff;border-radius:8px;padding:14px 18px;font-weight:600;font-size:15px}
+a.go span{opacity:.85;font-weight:400;font-size:13px}
+.links{margin-top:20px;padding-top:18px;border-top:.5px solid var(--line);display:flex;flex-direction:column;gap:12px}
+a.alt{color:var(--ink2);text-decoration:none;font-size:14px;display:flex;justify-content:space-between;gap:12px}
+a.alt span{color:var(--muted);flex:none}
+a.alt:hover{color:var(--red)}
+.foot{margin-top:24px;color:var(--muted);font-size:12px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <svg class="icon" viewBox="0 0 108 108" aria-hidden="true">
+      <rect width="108" height="108" rx="24" fill="#1C1917"/>
+      <path d="M27 21 H71 L84 34 V84 A3 3 0 0 1 81 87 H27 A3 3 0 0 1 24 84 V24 A3 3 0 0 1 27 21 Z" fill="#FBFAF7"/>
+      <path d="M71 21 L84 34 L71 34 Z" fill="#E2D8C6"/>
+      <rect x="32" y="44" width="46" height="6" fill="#17150F"/>
+      <rect x="32" y="57" width="34" height="4" fill="#17150F"/>
+      <rect x="32" y="67" width="40" height="4" fill="#17150F"/>
+      <rect x="64" y="70" width="14" height="14" rx="2" fill="#BE4234"/>
+    </svg>
+    <h1>校园通知雷达</h1>
+    <p class="sub">19 所高校 · 30 个通知源 · 自动识别截止日期</p>
+    <a class="go" href="/notice-radar-site/">打开网页版 <span>→</span></a>
+    <div class="links">
+      <a class="alt" href="/notice-radar-site/notice-radar.apk">下载 Android 安装包 <span>APK</span></a>
+      <a class="alt" href="/notice-radar-site/CHANGELOG.md">更新记录 <span>CHANGELOG</span></a>
+      <a class="alt" href="/notice-radar-site/schools.md">支持的学校 <span>19 所</span></a>
+    </div>
+    <p class="foot">源码自 2026-11-03 起私有。这里只放网页版、通知数据与安装包，全部是只读产物。</p>
+  </div>
+</div>
+</body>
+</html>
